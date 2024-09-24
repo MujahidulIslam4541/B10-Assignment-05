@@ -78,15 +78,15 @@ const noakhaliDonate = document.getElementById('noakhali-donate-btn')
 
         historyItem.innerHTML =
             `
-        <h1 class="text-black font-bold text-xl">${noakhaliInput} Donate for Flood at Noakhali, Bangladesh</h1>
+        <h1 class="text-black font-semibold text-xl">${noakhaliInput} Donate for Flood at Noakhali, Bangladesh</h1>
         <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
     `
 
         const historyContainer = document.getElementById('history-list');
 
-        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+        historyContainer.insertBefore(historyItem, historyContainer.lastChild);
 
-        my_modal_5.showModal();
+        my_modal_1.showModal();
 
     });
 
@@ -122,14 +122,16 @@ const feniDonete = document.getElementById('feni-input-btn')
 
         historyItem.innerHTML =
             `
-        <h1 class="text-black font-bold text-xl">${feniInput} 
+        <h1 class="text-black font-semibold text-xl">${feniInput} 
         Donate for Flood Relief in Feni,Bangladesh</h1>
         <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
     `
 
         const historyContainer = document.getElementById('history-list');
 
-        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+        historyContainer.insertBefore(historyItem, historyContainer.lastChild);
+
+        my_modal_1.showModal();
 
     });
 
@@ -163,15 +165,16 @@ const cotaMovement = document.getElementById('cota-btn')
 
         historyItem.innerHTML =
             `
-        <h1 class="text-black font-bold text-xl">${cotaInputField}
+        <h1 class="text-black font-semibold text-xl">${cotaInputField}
         Aid for Injured in the Quota Movement</h1>
         <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
     `
 
         const historyContainer = document.getElementById('history-list');
 
-        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+        historyContainer.insertBefore(historyItem, historyContainer.lastChild);
 
+        my_modal_1.showModal();
 
     });
 
