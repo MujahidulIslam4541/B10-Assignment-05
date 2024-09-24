@@ -3,7 +3,6 @@ function getInputValue(id) {
     return parseFloat(document.getElementById(id).value);
 }
 
-
 function getInnerTex(id) {
     return parseFloat(document.getElementById(id).innerText);
 }
@@ -14,13 +13,13 @@ function getMainBalanceById(id) {
 
 
 // donation  button
-const donationButton=document.getElementById('donation-btn');
-const historyButton=document.getElementById('history-btn');
+const donationButton = document.getElementById('donation-btn');
+const historyButton = document.getElementById('history-btn');
 
-donationButton.addEventListener('click',function(){
-    donationButton.classList.add("bg-[#B4F461]","font-semibold");
+donationButton.addEventListener('click', function () {
+    donationButton.classList.add("bg-[#B4F461]", "font-semibold");
 
-    historyButton.classList.remove("bg-[#B4F461]","font-semibold")
+    historyButton.classList.remove("bg-[#B4F461]", "font-semibold")
 
     document.getElementById('main-section').classList.remove('hidden');
 
@@ -29,15 +28,15 @@ donationButton.addEventListener('click',function(){
 
 
 // history button
-historyButton.addEventListener('click',function(){
-    historyButton.classList.add("bg-[#B4F461]","font-semibold");
+historyButton.addEventListener('click', function () {
+    historyButton.classList.add("bg-[#B4F461]", "font-semibold");
 
-    donationButton.classList.remove("bg-[#B4F461]","font-semibold");
+    donationButton.classList.remove("bg-[#B4F461]", "font-semibold");
 
     document.getElementById('main-section').classList.add('hidden');
 
     document.getElementById('Donation-history').classList.remove('hidden')
-})
+});
 
 
 
@@ -45,6 +44,7 @@ historyButton.addEventListener('click',function(){
 
 const noakhaliDonate = document.getElementById('noakhali-donate-btn')
     .addEventListener('click', function () {
+
 
 
         const noakhaliInput = getInputValue('noakhali-donate-input');
@@ -63,26 +63,31 @@ const noakhaliDonate = document.getElementById('noakhali-donate-btn')
             return;
         };
 
+
+
+
         document.getElementById('donate-inner-text').innerText = donate;
         document.getElementById('nav-amount').innerText = updateBalance;
 
 
 
 
-     // added history section
-    const historyItem = document.createElement('div');
-    historyItem.className = "bg-white p-5 mt-3 rounded-md border shadow-lg ";
+        // added history section
+        const historyItem = document.createElement('div');
+        historyItem.className = "bg-white p-5 mt-3 rounded-md border shadow-lg ";
 
-    historyItem.innerHTML =
-        `
+        historyItem.innerHTML =
+            `
         <h1 class="text-black font-bold text-xl">${noakhaliInput} Donate for Flood at Noakhali, Bangladesh</h1>
         <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
     `
 
-    const historyContainer = document.getElementById('history-list');
+        const historyContainer = document.getElementById('history-list');
 
-    historyContainer.insertBefore(historyItem, historyContainer.firstChild)
-        
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
+        my_modal_5.showModal();
+
     });
 
 
@@ -110,6 +115,21 @@ const feniDonete = document.getElementById('feni-input-btn')
         document.getElementById('donate-inner-text-feni').innerText = totalDonateAmount;
         document.getElementById('nav-amount').innerText = updateBalance;
 
+
+        // added history section
+        const historyItem = document.createElement('div');
+        historyItem.className = "bg-white p-5 mt-3 rounded-md border shadow-lg ";
+
+        historyItem.innerHTML =
+            `
+        <h1 class="text-black font-bold text-xl">${feniInput} Donate for Flood Relief in Feni,Bangladesh</h1>
+        <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
+    `
+
+        const historyContainer = document.getElementById('history-list');
+
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
     });
 
 
@@ -134,6 +154,22 @@ const cotaMovement = document.getElementById('cota-btn')
 
         document.getElementById('cota-inner-text').innerText = totalCotaDonation;
         document.getElementById('nav-amount').innerText = updateBalance;
+
+
+        // added history section
+        const historyItem = document.createElement('div');
+        historyItem.className = "bg-white p-5 mt-3 rounded-md border shadow-lg ";
+
+        historyItem.innerHTML =
+            `
+        <h1 class="text-black font-bold text-xl">${cotaInputField}
+        Aid for Injured in the Quota Movement</h1>
+        <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
+    `
+
+        const historyContainer = document.getElementById('history-list');
+
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 
 
     });

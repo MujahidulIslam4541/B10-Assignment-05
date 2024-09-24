@@ -37,7 +37,7 @@
             <div class="bg-[#F9F7F3] py-4">
                 <div class="w-11/12 mx-auto flex justify-between">
 
-                    <button id="blog-btn" class="bg-[#B4F461] rounded-md py-2 px-4 ">Blog</button>
+                    <a href="./faq.html"><button id="blog-btn" class="bg-[#B4F461] rounded-md py-2 px-4 ">Blog</button></a>
 
                     <p class="text-[20px] font-semibold flex justify-center items-center"><img src="./assets/logo.png"
                             alt="" class="mr-3 w-8"> Donate Bangladesh</p>
@@ -59,22 +59,24 @@
     </header>
 
 
-<!-- 
+
     <div>
      
-        <button class="btn " onclick="my_modal_5.showModal()">open modal</button>
+        <!-- <button class="btn ">open modal</button> -->
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
+            <div class="modal-box text-center">
+                <h3 class="text-lg font-bold">Congrates!</h3>
+                <p class="py-4 flex justify-center"><img src="./assets/coin.png" alt=""></p>
+                <p>You have donated for Humankind</p>
+                <h2>Successfully</h2>
+                <div class="modal-action flex justify-center">
                     <form method="dialog">
-                        <button class="btn">Close</button>
+                        <button class="btn ">Close Confirmation</button>
                     </form>
                 </div>
             </div>
         </dialog>
-    </div> -->
+    </div>
 
 
     <main id="main-section" class="w-10/12 mx-auto mt-8 ">
@@ -99,7 +101,7 @@
                 <input id="noakhali-donate-input" type="text" name="" id="" placeholder="Write Donation Amount"
                     class="w-full p-2 rounded-md border  mt-2">
 
-                <button id="noakhali-donate-btn" class="btn w-full mt-2 bg-[#B4F461] font-semibold">Donate Now</button>
+                <button onclick="my_modal_5.showModal()" id="noakhali-donate-btn" class="btn w-full mt-2 bg-[#B4F461] font-semibold">Donate Now</button>
             </div>
         </div>
 

@@ -17,7 +17,7 @@
 <body>
 
     
-    <h1 class="font-bold text-2xl ml-20 my-10">Important FAQ</h1>
+    <h1 class="font-bold text-2xl w-10/12 mx-auto my-5">Important FAQ  <i class="fa-regular fa-comment"></i></h1>
 
     <div class="w-10/12 mx-auto bg-white shadow-md rounded-lg">
       
@@ -29,18 +29,26 @@
               <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
             </div>
           </div>
+        <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>In JavaScript, you can select an element from the DOM using a variety of methods provided by the document object.getElementById(),getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll()</p>
+            </div>
+          </div>
+          
           <div class="collapse collapse-arrow border">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM ?</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Event delegation is a technique where a single event listener is added to a parent element to handle events from its child elements.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow border">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>In JavaScript, you can manipulate an element's attributes and styles using DOM properties and methods. setAttribute() ,getAttribute() ,removeAttribute() ,classList add(), remove(), toggle() </p>
             </div>
           </div>
 
