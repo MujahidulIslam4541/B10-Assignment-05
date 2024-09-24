@@ -122,7 +122,8 @@ const feniDonete = document.getElementById('feni-input-btn')
 
         historyItem.innerHTML =
             `
-        <h1 class="text-black font-bold text-xl">${feniInput} Donate for Flood Relief in Feni,Bangladesh</h1>
+        <h1 class="text-black font-bold text-xl">${feniInput} 
+        Donate for Flood Relief in Feni,Bangladesh</h1>
         <p class="text-xs text-gray-500 font-semibold">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p>
     `
 
